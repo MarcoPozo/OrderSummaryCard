@@ -24,7 +24,7 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 890px;
   overflow: hidden;
   min-height: 100vh;
   overflow-y: scroll;
@@ -209,12 +209,18 @@ a {
 
 .attribution {
   width: 100%;
-  font-size: 10px;
+  color: var(--dark-blue);
+  font-size: 12px;
   text-align: center;
+}
+
+.attribution a {
+  color: var(--violet);
 }
 
 @media screen and (max-width: 500px) {
   .principal {
+    height: 710px;
     background-size: 100% 30%;
     background-image: url("../images/pattern-background-mobile.svg");
   }
@@ -266,6 +272,10 @@ a {
 }
 
 @media screen and (max-width: 360px) {
+  .principal {
+    height: 660px;
+  }
+
   .card {
     width: 90%;
     grid-template-rows: 140px 1fr;
